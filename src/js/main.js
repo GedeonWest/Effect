@@ -3,6 +3,7 @@ import '../scss/main.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
+import Masonry from 'masonry-layout';
 
 // Loading bootstrap with optional features
 initBootstrap({
@@ -11,5 +12,3 @@ initBootstrap({
   toasts: true,
 });
 
-// Your app code
-console.log(`Hello ${process.env.HELLO}`);

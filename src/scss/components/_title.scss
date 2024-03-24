@@ -1,0 +1,18 @@
+.title {
+  font-family: $font-family-second;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1em;
+  color: $white;
+}
+
+.subtitle {
+  font-size: 70px;
+  line-height: 1em;
+
+  &--m {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3em;
+  }
+}
