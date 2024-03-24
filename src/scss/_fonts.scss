@@ -1,0 +1,40 @@
+//---------------------------------------------
+//
+//  Fonts
+//
+//    1. Loading Mixins
+//    2. Loading Fonts
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Loading Mixins
+//---------------------------------------------
+
+@import "mixins/google-fonts";
+
+//---------------------------------------------
+// 2. Loading Fonts
+//---------------------------------------------
+
+// @include googleFont((
+//   "name": "Roboto",
+//   "folder": "Roboto",
+//   "files": "Roboto",
+//   "weights": (300, 400, 700)
+// ));
+
+@include googleFonts((
+  (
+    "name": "Montserrat",
+    "folder": "Montserrat",
+    "files": "Montserrat",
+    "weights": (700)
+  ),
+  (
+    "name": "Manrope",
+    "folder": "Manrope",
+    "files": "Manrope",
+    "weights": (300, 400, 500, 600, 800)
+  ),
+));
