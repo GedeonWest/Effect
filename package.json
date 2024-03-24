@@ -44,6 +44,7 @@
         "webpack-dev-server": "^4.7.4"
     },
     "dependencies": {
-        "masonry-layout": "^4.2.2"
+        "masonry-layout": "^4.2.2",
+        "vanilla-infinite-marquee": "^1.0.9"
     }
 }
