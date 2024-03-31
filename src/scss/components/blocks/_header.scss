@@ -1,6 +1,5 @@
 .header {
-  padding-top: 12px;
-  margin-bottom: 200px;
+  padding-top: 20px;
   position: relative;
   z-index: 102;
 
@@ -117,15 +116,27 @@
       content: '';
       position: absolute;
       display: block;
-      width: 700px;
-      height: 700px;
-      top: -80%;
-      right: -260%;
+      width: 500px;
+      height: 500px;
+      top: -20%;
+      right: -190%;
       z-index: 101;
       background-color: $red;
-      border-radius: 50%
-      // background-image: url('../images/home/ellipse.svg');
-      // background-repeat: no-repeat;
+      border-radius: 50%;
+
+      @include media-breakpoint-up(tablet) {
+        width: 600px;
+        height: 600px;
+        top: -60%;
+        right: -240%;
+      }
+
+      @include media-breakpoint-up(tablet-lg) {
+        width: 700px;
+        height: 700px;
+        top: -80%;
+        right: -260%;
+      }
     }
   }
 }

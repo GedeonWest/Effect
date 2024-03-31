@@ -1,6 +1,11 @@
 .banner {
   position: relative;
   overflow: hidden;
+  padding-top: 200px;
+
+  @include media-breakpoint-up(tablet) {
+    padding-top: 0;
+  }
 }
 
 .banner__content {
