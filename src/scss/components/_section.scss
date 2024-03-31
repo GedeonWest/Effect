@@ -1,6 +1,23 @@
 .section {
-  padding: 60px 0;
+  padding: 0;
+
+  @include media-breakpoint-up(tablet) {
+    padding: 20px 0;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    padding: 60px 0;
+  }
+
   & + & {
-    margin-top: 80px;
+    margin-top: 120px;
+
+    @include media-breakpoint-up(tablet) {
+      margin-top: 60px;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      margin-top: 80px;
+    }
   }
 }

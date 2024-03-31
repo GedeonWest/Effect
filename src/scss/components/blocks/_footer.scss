@@ -1,0 +1,15 @@
+.footer__contacts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 1em;
+  }
+}

@@ -1,0 +1,19 @@
+.description {
+  font-size: 1rem;
+
+  @include media-breakpoint-up(tablet) {
+    font-size: 1.125rem;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    font-size: 1.25rem;
+  }
+
+  .garanty & {
+    padding-right: 50px;
+
+    @include media-breakpoint-up(tablet) {
+      padding-right: 10px;
+    }
+  }
+}

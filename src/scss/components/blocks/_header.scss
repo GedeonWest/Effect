@@ -1,0 +1,131 @@
+.header {
+  padding-top: 12px;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 102;
+
+  @include media-breakpoint-up(tablet) {
+    margin-bottom: 0;
+    padding-top: 60px;
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    padding-top: 0;
+  }
+}
+
+.nav-main {
+  display: none;
+
+  @include media-breakpoint-up(tablet-lg) {
+    display: block;
+  }
+}
+
+.nav__toggler {
+  display: block;
+  margin-left: auto;
+  line-height: 1em;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 102;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    border-radius: 50%;
+    background-color: $secondary;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    display: none;
+  }
+
+
+  &--hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.nav__closer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 102;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    width: 24px;
+    height: 1px;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(315deg);
+    }
+  }
+}
+
+.navbar__menu {
+  display: none;
+
+  @include media-breakpoint-up(tablet-lg) {
+    display: flex;
+  }
+}
+
+.header__mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 32px;
+
+  ul {
+    z-index: 102;
+  }
+
+  .nav-item {
+    text-align: right;
+  }
+
+  &--active {
+    display: flex;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 700px;
+      height: 700px;
+      top: -80%;
+      right: -260%;
+      z-index: 101;
+      background-color: $red;
+      border-radius: 50%
+      // background-image: url('../images/home/ellipse.svg');
+      // background-repeat: no-repeat;
+    }
+  }
+}

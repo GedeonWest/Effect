@@ -33,6 +33,7 @@ $enable-gradients: false;
 // Custom Colors
 
 $white:      #ffffff;
+$white-20:     rgba($color: $white, $alpha: 0.02);
 $white-50:     rgba($color: $white, $alpha: 0.5);
 $black-40:   #3a3a3a;
 $blue:       #0E37C8;
@@ -43,12 +44,12 @@ $yellow:     #DCFF02;
 $body-color: #000000; // The default text color
 
 $primary:    $white;
-$secondary:  #6c757d;
+$secondary:  $red;
 $success:    #198754;
 $info:       #0dcaf0;
 $warning:    #ffc107;
 $danger:     #dc3545;
-$light:      #f8f9fa;
+$light:      $white-20;
 $dark:       #212529;
 
 //---------------------------------------------
