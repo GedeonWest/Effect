@@ -25,8 +25,50 @@ $container-padding-x: 3.75rem;
     padding-right: $container-padding-x;
     padding-left: $container-padding-x;
   }
+
+  & + & {
+    margin-top: 70px;
+  }
 }
 
 .container-fluid {
   max-width: 1440px;
+}
+
+.container-md {
+  @include make-container();
+
+  @include media-breakpoint-up(tablet) {
+    max-width: 100%;
+    padding: 0 126px;
+
+    .header & {
+      padding-right: $container-padding-x-md;
+      padding-left: $container-padding-x-md;
+    }
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    max-width: 752px;
+    padding: 0;
+
+    .header & {
+      padding: 0;
+    }
+  }
+
+  @include media-breakpoint-up(desktop) {
+    max-width: 872px;
+  }
+
+
+  & + &,
+  .container + &,
+  & + .container {
+    margin-top: 40px;
+
+    @include media-breakpoint-up(tablet) {
+      margin-top: 70px;
+    }
+  }
 }

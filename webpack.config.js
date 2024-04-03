@@ -87,6 +87,15 @@ export default {
         },
       ],
     }),
+    // Copy videos to the public folder
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'src/videos',
+          to: 'videos',
+        },
+      ],
+    }),
 
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
@@ -96,6 +105,10 @@ export default {
       filename: 'cases.html',
       template: path.resolve(process.cwd(), 'cases.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'case.html',
+      template: path.resolve(process.cwd(), 'case.html'),
+    }),
   ],
 
   // Configure the "webpack-dev-server" plugin
@@ -103,7 +116,7 @@ export default {
     static: {
       directory: path.resolve(process.cwd(), 'public'),
     },
-    watchFiles: [path.resolve(process.cwd(), 'index.html')],
+    watchFiles: [path.resolve(process.cwd(), 'index.html'), path.resolve(process.cwd()), 'case.html'],
     compress: true,
     port: process.env.PORT || 9090,
     hot: true,

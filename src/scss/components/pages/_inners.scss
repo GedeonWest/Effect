@@ -1,0 +1,39 @@
+.inner {
+  padding-top: 40px;
+
+  @include media-breakpoint-up(tablet) {
+    padding-top: 0;
+  }
+
+  h6 {
+    margin-bottom: 24px;
+  }
+}
+
+.hashs {
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    margin-bottom: 30px;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(100% / (16 / 9));
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
