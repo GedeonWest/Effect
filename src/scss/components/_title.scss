@@ -7,8 +7,12 @@
 }
 
 .subtitle {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1em;
+
+  @include media-breakpoint-up(phone-l) {
+    font-size: 40px;
+  }
 
   @include media-breakpoint-up(tablet) {
     font-size: 48px;
