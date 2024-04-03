@@ -109,6 +109,10 @@ export default {
       filename: 'case.html',
       template: path.resolve(process.cwd(), 'case.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'contacts.html',
+      template: path.resolve(process.cwd(), 'contacts.html'),
+    }),
   ],
 
   // Configure the "webpack-dev-server" plugin
@@ -116,7 +120,7 @@ export default {
     static: {
       directory: path.resolve(process.cwd(), 'public'),
     },
-    watchFiles: [path.resolve(process.cwd(), 'index.html'), path.resolve(process.cwd()), 'case.html'],
+    watchFiles: [path.resolve(process.cwd(), 'index.html'), path.resolve(process.cwd()), 'case.html', path.resolve(process.cwd()), 'contacts.html'],
     compress: true,
     port: process.env.PORT || 9090,
     hot: true,
