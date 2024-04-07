@@ -3,7 +3,7 @@
   padding-bottom: 180px;
 
   @include media-breakpoint-up(tablet) {
-    padding: inherit;
+    padding: 60px 0;
   }
 }
 
@@ -23,6 +23,14 @@
 .callback__content {
   position: relative;
   z-index: 1;
+
+  @include media-breakpoint-up(tablet-lg) {
+    padding-right: 32px;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    padding-right: 0;
+  }
 }
 
 .callback__title {
@@ -32,5 +40,10 @@
   @include media-breakpoint-up(tablet) {
     padding-bottom: 0;
     margin-bottom: 60px;
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    padding-bottom: 0;
+    margin-bottom: 80px;
   }
 }

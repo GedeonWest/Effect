@@ -3,12 +3,17 @@
 
   @include media-breakpoint-up(tablet-lg) {
     margin-top: 60px;
+    margin-bottom: 80px;
   }
 }
 
 .footer__contacts {
   list-style: none;
   padding: 0;
+
+  @include media-breakpoint-up(tablet-lg) {
+    margin-bottom: 40px;
+  }
 
   li {
     &:not(:last-child) {

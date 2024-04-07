@@ -2,8 +2,9 @@ $mediaQueriesUp: (
   phone: 'screen',
   phone-l: 'screen and (min-width: 413px)',
   tablet: 'screen and (min-width: 767px)',
-  tablet-lg: 'screen and (min-width: 991px)',
-  desktop: 'screen and (min-width: 1199px)',
+  tablet-lg: 'screen and (min-width: 1023px)',
+  desktop: 'screen and (min-width: 1279px)',
+  desktop-lg: 'screen and (min-width: 1280px)',
   wide: 'screen and (min-width: 1440px)',
 );
 
