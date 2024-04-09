@@ -45,6 +45,7 @@
     },
     "dependencies": {
         "masonry-layout": "^4.2.2",
+        "swiper": "^11.1.1",
         "vanilla-infinite-marquee": "^1.0.9"
     }
 }

@@ -3,6 +3,8 @@ import '../scss/main.scss';
 import Masonry from 'masonry-layout';
 import ticker from './ticker.js';
 import header from './header.js';
+import cardsRange from './cardsRange.js';
+import { initSliders } from './feedbackSwiper.js';
 
 // Load Bootstrap init
 import { initBootstrap } from './bootstrap.js';
@@ -16,3 +18,5 @@ initBootstrap({
 
 header();
 ticker();
+cardsRange();
+initSliders();

@@ -1,3 +1,11 @@
+.contacts {
+  padding-top: 40px;
+
+  @include media-breakpoint-up(tablet) {
+  padding-top: 60px;
+  }
+}
+
 .contacts__footer {
   padding-bottom: 12px;
 
@@ -7,8 +15,9 @@
 }
 
 .contacts__footer-copy {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .contacts-list {
