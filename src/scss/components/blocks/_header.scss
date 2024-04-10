@@ -8,7 +8,7 @@
     padding-top: 60px;
   }
 
-  @include media-breakpoint-up(tablet-lg) {
+  @include media-breakpoint-up(desktop) {
     padding-top: 0;
   }
 }
@@ -16,7 +16,7 @@
 .nav-main {
   display: none;
 
-  @include media-breakpoint-up(tablet-lg) {
+  @include media-breakpoint-up(desktop) {
     display: block;
   }
 }
@@ -43,7 +43,7 @@
     display: block;
   }
 
-  @include media-breakpoint-up(tablet-lg) {
+  @include media-breakpoint-up(desktop) {
     display: none;
   }
 
@@ -89,7 +89,7 @@
 .navbar__menu {
   display: none;
 
-  @include media-breakpoint-up(tablet-lg) {
+  @include media-breakpoint-up(desktop) {
     display: flex;
   }
 }

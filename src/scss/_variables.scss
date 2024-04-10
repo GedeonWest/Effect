@@ -81,3 +81,14 @@ $grid-gutter-width: 1.5rem;
 
 $form-range-track-bg: $white;
 $form-range-track-height: calc(1rem / 16);
+
+// Bootstrap breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 414px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1440px
+);
