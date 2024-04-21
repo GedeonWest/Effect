@@ -1,6 +1,6 @@
 .callback {
   position: relative;
-  padding-bottom: 180px;
+  padding-bottom: 20px;
 
   @include media-breakpoint-up(tablet) {
     padding: 60px 0;
@@ -9,27 +9,43 @@
 
 .callback__image-wrapper {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 80px;
+  left: 67px;
   padding: 0;
+  transform: translateX(-50%);
 
   @include media-breakpoint-up(tablet) {
     position: relative;
     bottom: auto;
     left: auto;
+    top: auto;
+    transform: none;
+    padding-left: 0;
+  }
+
+  @include media-breakpoint-up(tablet-lg) {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+
+    @include media-breakpoint-up(tablet-lg) {
+      margin-left: 0;
+    }
   }
 }
 
 .callback__content {
   position: relative;
   z-index: 1;
+  padding-left: 0;
 
   @include media-breakpoint-up(tablet-lg) {
-    padding-right: 32px;
-  }
-
-  @include media-breakpoint-up(desktop) {
-    padding-right: 0;
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 

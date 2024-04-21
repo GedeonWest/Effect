@@ -23,7 +23,7 @@
 .feedback__card {
   padding: 16px;
   border-radius: 16px;
-  border: 1px solid $white-50;
+  border: 1px solid #808080;
 
 
   @include media-breakpoint-up(tablet) {
@@ -72,7 +72,8 @@
 }
 
 .feedback-swiper {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  overflow: hidden;
 
   @include media-breakpoint-up(tablet) {
     margin-bottom: 50px;
@@ -83,23 +84,20 @@
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 0 !important;
 }
 
 .feedback__link {
   position: relative;
 
   @include media-breakpoint-up(tablet) {
-    position: absolute;
-    left: 50%;
-    top: 0;
     display: inline-block;
-    transform: translateX(-50%);
   }
 }
 
 .feedback__swiper-buttons {
   margin-left: auto;
-  display: none;
+  display: flex;
   align-items: center;
 
   @include media-breakpoint-up(tablet) {
@@ -124,6 +122,6 @@
 
   &.swiper-button-prev {
     transform: scale(-1);
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }

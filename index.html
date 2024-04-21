@@ -123,17 +123,15 @@
             <!-- TICKER -->
 
             <section class="section ticker">
-                <div class="container-fluid">
-                    <div class="ticker__row" id="ticker">
-                        <div class="ticker__image-wrapper">
-                            <img src="images/ticker/kia.svg" alt="" class="ticker__image" />
-                        </div>
-                        <div class="ticker__image-wrapper">
-                            <img src="images/ticker/sber.svg" alt="" class="ticker__image" />
-                        </div>
-                        <div class="ticker__image-wrapper">
-                            <img src="images/ticker/amediateka.svg" alt="" class="ticker__image" />
-                        </div>
+                <div class="ticker__row" id="ticker">
+                    <div class="ticker__image-wrapper">
+                        <img src="images/ticker/kia.svg" alt="" class="ticker__image" />
+                    </div>
+                    <div class="ticker__image-wrapper">
+                        <img src="images/ticker/sber.svg" alt="" class="ticker__image" />
+                    </div>
+                    <div class="ticker__image-wrapper">
+                        <img src="images/ticker/amediateka.svg" alt="" class="ticker__image" />
                     </div>
                 </div>
             </section>
@@ -143,7 +141,7 @@
             <!-- SLIDER -->
 
             <section class="section feedback">
-                <div class="feedback__wrapper">
+                <div class="container">
                     <div class="swiper-container feedback-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -248,12 +246,17 @@
             <!-- CALLBACK -->
 
             <section class="section callback">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-12 col-sm-6 ps-0 callback__image-wrapper">
-                            <img src="images/home/abstract.png" class="img-fluid" alt="" />
+                        <div class="col-12 col-sm-6 callback__image-wrapper">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="images/home/abstract.png" />
+                                <source media="(min-width: 415px)" srcset="images/home/abstract-mobile.png" />
+                                <source media="(min-width: 320px)" srcset="images/home/abstract.png" />
+                                <img src="images/home/abstract.png" class="img-fluid" alt="" />
+                            </picture>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-6 col-xl-5 callback__content">
+                        <div class="col-12 col-sm-6 col-lg-6 callback__content">
                             <h4 class="subtitle fw-bolder callback__title">
                                 Обсудим вашу <br />
                                 задачу
@@ -278,7 +281,7 @@
             <section class="section cases">
                 <div class="container">
                     <div class="row mb-5 mb-sm-6">
-                        <div class="col-12 col-sm-8">
+                        <div class="col-12 col-md-8">
                             <div class="cases__title-holder">
                                 <span class="subtitle cases__title">лучшие кейсы</span>
                                 <span class="subtitle cases__title">лучшие кейсы</span>
