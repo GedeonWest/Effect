@@ -10,7 +10,15 @@
   padding: 1rem;
   --bs-border-opacity: 0.5;
   border-radius: 18px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+
+  &--error {
+    @extend %form-wrapper--error;
+  }
+
+  &--success {
+    @extend %form-wrapper--success;
+  }
 
   input {
     font-size: 1rem;
@@ -26,5 +34,25 @@
 
   button {
     font-weight: 500;
+  }
+
+  p {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    margin: 0;
+    font-size: 1rem;
+    display: none;
+  };
+}
+
+.form__text {
+  %form-wrapper--error &,
+  %form-wrapper--success & {
+    display: inline-block;
+  }
+
+  %form-wrapper--error & {
+    color: $red;
   }
 }
