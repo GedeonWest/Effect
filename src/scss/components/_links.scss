@@ -47,3 +47,9 @@
     }
   }
 }
+
+.link-primary {
+  &:hover {
+    color: $red !important;
+  }
+}

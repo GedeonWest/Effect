@@ -29,8 +29,10 @@
 
 .case-card {
   position: relative;
+  display: block;
   overflow: hidden;
   padding-top: calc(100% / (4 / 3));
+  transition: color .3s ease;
 }
 
 .case-card__image {

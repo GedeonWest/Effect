@@ -97,7 +97,7 @@
 
 .feedback__swiper-buttons {
   margin-left: auto;
-  display: flex;
+  display: none;
   align-items: center;
 
   @include media-breakpoint-up(tablet) {
