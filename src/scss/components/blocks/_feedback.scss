@@ -97,12 +97,8 @@
 
 .feedback__swiper-buttons {
   margin-left: auto;
-  display: none;
+  display: flex;
   align-items: center;
-
-  @include media-breakpoint-up(tablet) {
-    display: flex;
-  }
 }
 
 .feedback__swiper-button {
